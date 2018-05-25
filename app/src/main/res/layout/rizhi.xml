@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15sp"
+        android:text="我的日志"
+        android:textColor="#c0c2c2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15sp"
+        android:layout_marginRight="15sp"
+        android:background="@drawable/shape"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/Relative_Ri_Yi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15sp"
+            >
+
+            <ImageView
+                android:id="@+id/Image_Ri_Yi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15sp"
+                android:src="@mipmap/wodesuoyourizhi" />
+
+            <TextView
+                android:id="@+id/Text_Ri_Yi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15sp"
+                android:layout_toRightOf="@id/Image_Ri_Yi"
+                android:text="所有日志" />
+
+            <include layout="@layout/fuyong"></include>
+
+
+        </RelativeLayout>
+
+        <include layout="@layout/xian"></include>
+
+        <RelativeLayout
+            android:id="@+id/Relative_Ri_Er"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15sp"
+            >
+
+            <ImageView
+                android:id="@+id/Image_Ri_Er"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15sp"
+                android:src="@mipmap/woderizhi" />
+
+            <TextView
+                android:id="@+id/Text_Ri_Er"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="14dp"
+                android:layout_marginStart="14dp"
+                android:layout_toEndOf="@+id/Image_Ri_Er"
+                android:layout_toRightOf="@+id/Image_Ri_Er"
+                android:text="草稿箱" />
+
+            <include layout="@layout/fuyong"></include>
+
+
+        </RelativeLayout>
+
+        <include layout="@layout/xian"></include>
+
+        <RelativeLayout
+            android:id="@+id/Relative_Ri_San"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15sp"
+            >
+
+            <ImageView
+                android:id="@+id/Image_Ri_San"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15sp"
+                android:src="@mipmap/zhongyaorizhi" />
+
+            <TextView
+                android:id="@+id/Text_Ri_San"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="12dp"
+                android:layout_marginStart="12dp"
+                android:layout_toEndOf="@+id/Image_Ri_San"
+                android:layout_toRightOf="@+id/Image_Ri_San"
+                android:text="重要日志" />
+
+            <include layout="@layout/fuyong"></include>
+
+        </RelativeLayout>
+
+        <include layout="@layout/xian"></include>
+
+        <RelativeLayout
+            android:id="@+id/Relative_Ri_Si"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15sp">
+
+            <ImageView
+                android:id="@+id/Image_Ri_Si"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15sp"
+                android:src="@mipmap/yishanchu" />
+
+            <TextView
+                android:id="@+id/Text_Ri_Si"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="22dp"
+                android:layout_marginStart="22dp"
+                android:layout_toEndOf="@+id/Image_Ri_Si"
+                android:layout_toRightOf="@+id/Image_Ri_Si"
+                android:text="已删除" />
+
+            <include layout="@layout/fuyong"></include>
+        </RelativeLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15sp"
+        android:text="收到的日志"
+        android:textColor="#c0c2c2" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15sp"
+        android:layout_marginRight="15sp"
+        android:background="@drawable/shape"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/Relative_Ri_Wu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:id="@+id/Image_Ri_Wu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15sp"
+                android:src="@mipmap/shoudaoderizhi" />
+
+            <TextView
+                android:id="@+id/Text_Ri_Wu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15sp"
+                android:layout_toRightOf="@id/Image_Ri_Wu"
+                android:text="所有日志" />
+
+            <include layout="@layout/fuyong"></include>
+        </RelativeLayout>
+        <include layout="@layout/xian"/>
+        <RelativeLayout
+            android:id="@+id/Relative_Ri_Liu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15sp"
+            >
+            <ImageView
+                android:id="@+id/Image_Ri_Liu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15sp"
+                android:src="@mipmap/zhongyaorizhi" />
+
+            <TextView
+                android:id="@+id/Text_Ri_Liu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="11dp"
+                android:layout_marginStart="11dp"
+                android:layout_toEndOf="@+id/Image_Ri_Liu"
+                android:layout_toRightOf="@+id/Image_Ri_Liu"
+                android:text="重要日志" />
+
+            <include layout="@layout/fuyong"></include>
+        </RelativeLayout>
+        <include layout="@layout/xian"/>
+
+        <RelativeLayout
+            android:id="@+id/Relative_Ri_Qi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15sp"
+            android:paddingBottom="15sp"
+            >
+            <ImageView
+                android:id="@+id/Image_Ri_Qi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15sp"
+                android:src="@mipmap/yishanchu" />
+
+            <TextView
+                android:id="@+id/Text_Ri_Qi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/Image_Ri_Qi"
+                android:layout_toRightOf="@+id/Image_Ri_Qi"
+                android:text="已删除" />
+
+            <include layout="@layout/fuyong"></include>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

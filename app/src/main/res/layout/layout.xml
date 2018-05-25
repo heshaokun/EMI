@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f0f2"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/Lay_Toolber"
+        android:background="#FF071EED"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/Toolber_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:src="@mipmap/set_img"/>
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/et_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="企业名称" />
+
+            <EditText
+
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:layout_marginLeft="15dp"
+                android:background="@null" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:background="#f2f0f2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="营业执照" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="80px"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:background="@null" />
+
+            <ImageView
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:layout_marginRight="8dp"
+                android:src="@mipmap/shangchuan" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:background="#f2f0f2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="法人姓名" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:layout_marginLeft="15dp"
+                android:background="@null" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:background="#f2f0f2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="身份证号" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="80px"
+                android:layout_marginLeft="15dp"
+                android:background="@null" />
+            <ImageView
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:layout_marginRight="8dp"
+                android:src="@mipmap/shangchuan" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:background="#f2f0f2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="联系方式" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:layout_marginLeft="15dp"
+                android:background="@null" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/et_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="开户账号" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="80px"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:background="@null" />
+            <ImageView
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:layout_marginRight="8dp"
+                android:src="@mipmap/shangchuan" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:background="#f2f0f2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="银行          " />
+
+            <EditText
+
+                android:layout_width="0dp"
+                android:layout_height="80px"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:background="@null" />
+            <ImageView
+                android:layout_width="20px"
+                android:layout_height="80px"
+                android:layout_marginRight="8dp"
+                android:src="@mipmap/my_jt"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/Lay_btn"
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:background="@drawable/dengl_bg"
+        android:text="下一步" />
+</LinearLayout>

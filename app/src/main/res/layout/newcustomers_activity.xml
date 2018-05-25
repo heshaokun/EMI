@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/Set_Toolber"
+        android:background="#FF071EED"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="30sp"
+            android:textColor="#FFFF"
+            android:text="新建客户"/>
+
+        <ImageView
+            android:id="@+id/Toolber_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:src="@mipmap/set_img"/>
+    </android.support.v7.widget.Toolbar>
+    <!--<TextView-->
+        <!--android:id="@+id/New_LeiBie"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textColor="#FF000000"-->
+        <!--android:textSize="20sp"-->
+        <!--android:text="客户类别"-->
+        <!--android:layout_margin="25sp"/>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape"
+        android:orientation="vertical"
+        android:layout_margin="15sp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/New_LeiBie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="客户类别"
+                android:textColor="#FF000000"
+                android:textSize="20sp"
+                android:layout_margin="10sp"/>
+
+        </RelativeLayout>
+        <!--<RadioGroup-->
+            <!--android:id="@+id/New_Radio"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:weightSum="3"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:layout_alignStart="@id/New_LeiBie"-->
+            <!--android:layout_alignLeft="@id/New_LeiBie"-->
+            <!--android:orientation="horizontal"-->
+            <!--&gt;-->
+            <!--<RadioButton-->
+                <!--android:id="@+id/New_Rbntton_1"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="合作社"-->
+                <!--android:background="#FFC7C4C4"-->
+                <!--android:button="@null"/>-->
+            <!--<RadioButton-->
+                <!--android:id="@+id/New_Rbntton_2"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="种植户"-->
+                <!--android:background="#FFC7C4C4"-->
+                <!--android:button="@null"/>-->
+            <!--<RadioButton-->
+                <!--android:id="@+id/New_Rbntton_3"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="经销商"-->
+                <!--android:background="#FFC7C4C4"-->
+                <!--android:button="@null"/>-->
+        <!--</RadioGroup>-->
+       <RelativeLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+           <TextView
+               android:id="@+id/New_tv"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+
+               android:text="身份证号"
+               android:textColor="#FF000000"
+               android:textSize="20sp"
+               android:layout_margin="10sp"/>
+
+           <EditText
+               android:id="@+id/New_etText"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignLeft="@+id/New_etText2"
+               android:layout_alignParentTop="true"
+               android:layout_alignStart="@+id/New_etText2"
+               android:layout_toLeftOf="@+id/New_ShangChuan"
+               android:layout_toStartOf="@+id/New_ShangChuan"
+               android:hint="请上传身份证照片" />
+
+           <ImageView
+               android:id="@+id/New_ShangChuan"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignBottom="@+id/New_tv"
+               android:layout_alignParentEnd="true"
+               android:layout_alignParentRight="true"
+               android:layout_marginEnd="16dp"
+               android:layout_marginRight="16dp"
+               android:src="@mipmap/shangchuan" />
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="1dp"
+               android:layout_alignEnd="@+id/Set_tv"
+               android:layout_alignRight="@+id/Set_tv"
+               android:layout_below="@+id/New_tv"
+               android:background="#FFF2F2F2"
+               android:id="@+id/textView" />
+
+           <TextView
+               android:id="@+id/New_tv2"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignLeft="@+id/New_tv"
+               android:layout_alignStart="@+id/New_tv"
+               android:layout_below="@+id/textView"
+               android:layout_marginTop="16dp"
+               android:text="手机号码"
+               android:textColor="#FF000000"
+               android:textSize="20sp" />
+
+           <EditText
+               android:id="@+id/New_etText2"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_alignBaseline="@+id/New_tv2"
+               android:layout_alignBottom="@+id/New_tv2"
+               android:layout_toEndOf="@+id/New_tv2"
+               android:layout_toRightOf="@+id/New_tv2"
+               android:hint="11位手机号" />
+       </RelativeLayout>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape"
+        android:orientation="vertical"
+        android:layout_margin="15sp">
+        <TextView
+            android:id="@+id/New_tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="银行卡号"
+            android:textColor="#FF000000"
+            android:textSize="20sp"
+            android:layout_margin="10sp"/>
+
+        <EditText
+            android:id="@+id/New_etText3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/New_tv3"
+            android:layout_toLeftOf="@+id/New_ShangChuan2"
+            android:layout_toRightOf="@+id/New_tv3"
+            android:layout_toStartOf="@+id/New_ShangChuan2"
+            android:hint="请上传银行卡照片" />
+
+        <ImageView
+            android:id="@+id/New_ShangChuan2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/New_tv3"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:src="@mipmap/shangchuan" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignEnd="@+id/Set_tv"
+            android:layout_alignRight="@+id/Set_tv"
+            android:layout_below="@+id/New_tv3"
+            android:background="#FFF2F2F2"
+            android:id="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/New_tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/New_tv3"
+            android:layout_alignStart="@+id/New_tv3"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="16dp"
+            android:text="银行"
+            android:textColor="#FF000000"
+            android:textSize="20sp" />
+        <EditText
+            android:id="@+id/New_etText4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/New_tv4"
+            android:layout_alignBottom="@+id/New_tv4"
+            android:layout_toEndOf="@+id/New_tv4"
+            android:layout_toRightOf="@+id/New_tv4"
+            android:hint="11位手机号" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/New_XiaYiBu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="下一步"
+        android:gravity="center"
+        android:textColor="#FFFF"
+        android:background="#FF0004FF"
+        android:layout_margin="20sp"
+        android:textSize="30sp"/>
+</LinearLayout>

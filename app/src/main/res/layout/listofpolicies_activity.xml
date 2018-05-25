@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F4F9"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/the_max_bg">
+
+        <ImageView
+            android:id="@+id/Toolber_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/KeHu_BianJ"
+            android:src="@mipmap/set_img" />
+
+        <TextView
+            android:id="@+id/KuHu_KHLB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/etSearch"
+            android:layout_alignStart="@+id/etSearch"
+            android:layout_below="@+id/KeHu_BianJ"
+            android:text="客户列表"
+            android:textColor="#FFFFFF"
+            android:textSize="35sp" />
+
+        <EditText
+            android:id="@+id/etSearch"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/KuHu_KHLB"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20sp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/shape"
+            android:hint="请输入文字..."
+            android:paddingLeft="32dp"
+            android:singleLine="true"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/ivDeleteText"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/etSearch"
+            android:layout_alignStart="@+id/etSearch"
+            android:layout_alignTop="@+id/etSearch"
+            android:layout_marginLeft="13dp"
+            android:layout_marginStart="13dp"
+            android:paddingRight="20dp"
+            android:src="@mipmap/the_sou" />
+
+
+        <TextView
+            android:id="@+id/KeHu_BianJ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/etSearch"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/etSearch"
+            android:layout_marginEnd="45dp"
+            android:layout_marginRight="45dp"
+            android:layout_marginTop="11dp"
+            android:text="编辑"
+            android:textSize="20sp"
+            android:textColor="#FFFF"/>
+
+        <TextView
+            android:id="@+id/KuHu_TianJ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/KeHu_BianJ"
+            android:layout_alignBottom="@+id/KeHu_BianJ"
+            android:layout_alignEnd="@+id/etSearch"
+            android:layout_alignRight="@+id/etSearch"
+            android:text="+"
+            android:textSize="30sp"
+            android:textColor="#FFFF"/>
+    </RelativeLayout>
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D9EAFF"
+        >
+
+    </android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFF2F2F2">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/Set_Toolber"
+        android:background="#FF071EED"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="30sp"
+            android:textColor="#FFFF"
+            android:text="设置"/>
+        <ImageView
+            android:id="@+id/Toolber_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:src="@mipmap/set_img"/>
+    </android.support.v7.widget.Toolbar>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape"
+        android:orientation="vertical"
+        android:layout_margin="15sp">
+        <TextView
+            android:id="@+id/Set_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="更换手机号码"
+            android:textColor="#FF000000"
+            android:textSize="20sp"
+            android:layout_margin="10sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignEnd="@+id/Set_tv"
+            android:layout_alignRight="@+id/Set_tv"
+            android:layout_below="@+id/Set_tv"
+            android:background="#FFF2F2F2" />
+
+        <TextView
+            android:id="@+id/Set_tv2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10sp"
+            android:layout_below="@+id/Set_tv"
+            android:text="修改登录密码"
+            android:textColor="#FF000000"
+            android:textSize="20sp" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape"
+        android:orientation="vertical"
+        android:layout_margin="15sp">
+        <TextView
+            android:id="@+id/Set_tv3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="关于一米"
+            android:textColor="#FF000000"
+            android:textSize="20sp"
+            android:layout_margin="10sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#FFF2F2F2"/>
+        <TextView
+            android:id="@+id/Set_tv4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="意见反馈"
+            android:textColor="#FF000000"
+            android:textSize="20sp"
+            android:layout_margin="10sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#FFF2F2F2"/>
+        <TextView
+            android:id="@+id/Set_tv5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="版本更新"
+            android:textColor="#FF000000"
+            android:textSize="20sp"
+            android:layout_margin="10sp"/>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15sp"
+        android:text="我的准客户"
+        android:textColor="#c0c2c2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15sp"
+        android:layout_marginRight="15sp"
+        android:background="@drawable/shape"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/Relative_Lie_Yi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15sp">
+
+            <ImageView
+                android:id="@+id/Image_Lie_Yi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15sp"
+                android:src="@mipmap/wodesuoyourizhi" />
+
+            <TextView
+                android:id="@+id/Text_Lie_Yi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="21dp"
+                android:layout_marginStart="21dp"
+                android:layout_toEndOf="@+id/Image_Lie_Yi"
+                android:layout_toRightOf="@+id/Image_Lie_Yi"
+                android:text="所有准客户" />
+
+            <include layout="@layout/fuyong"></include>
+
+
+        </RelativeLayout>
+
+        <include layout="@layout/xian"></include>
+
+        <RelativeLayout
+            android:id="@+id/Relative_Lie_Er"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15sp">
+
+            <ImageView
+                android:id="@+id/Image_Lie_Er"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15sp"
+                android:src="@mipmap/zhongyaorizhi" />
+
+            <TextView
+                android:id="@+id/Text_Lie_Er"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15sp"
+                android:layout_toRightOf="@id/Image_Lie_Er"
+                android:text="重要准客户" />
+
+            <include layout="@layout/fuyong"></include>
+
+
+        </RelativeLayout>
+
+        <include layout="@layout/xian"></include>
+
+        <RelativeLayout
+            android:id="@+id/Relative_Lie_San"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15sp">
+
+            <ImageView
+                android:id="@+id/Image_Lie_San"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15sp"
+                android:src="@mipmap/yishanchu" />
+
+            <TextView
+                android:id="@+id/Text_Lie_San"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="24dp"
+                android:layout_marginStart="24dp"
+                android:layout_toEndOf="@+id/Image_Lie_San"
+                android:layout_toRightOf="@+id/Image_Lie_San"
+                android:text=" 已删除" />
+
+            <include layout="@layout/fuyong"></include>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15sp"
+        android:text="共享的准客户"
+        android:textColor="#c0c2c2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15sp"
+        android:layout_marginRight="15sp"
+        android:background="@drawable/shape"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/Relative_Lie_Si"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15sp">
+
+            <ImageView
+                android:id="@+id/Image_Lie_Si"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15sp"
+                android:src="@mipmap/shoudaoderizhi" />
+
+            <TextView
+                android:id="@+id/Text_Lie_Si"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/Image_Lie_Si"
+                android:layout_marginLeft="19dp"
+                android:layout_marginStart="19dp"
+                android:layout_toEndOf="@+id/Image_Lie_Si"
+                android:layout_toRightOf="@+id/Image_Lie_Si"
+                android:text="所有准客户" />
+
+            <include layout="@layout/fuyong"></include>
+
+
+        </RelativeLayout>
+
+        <include layout="@layout/xian"></include>
+
+        <RelativeLayout
+            android:id="@+id/Relative_Lie_Wu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15sp">
+
+            <ImageView
+                android:id="@+id/Image_Lie_Wu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15sp"
+                android:src="@mipmap/zhongyaorizhi" />
+
+            <TextView
+                android:id="@+id/Text_Lie_Wu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15sp"
+                android:layout_toRightOf="@id/Image_Lie_Wu"
+                android:text="重要准客户" />
+
+            <include layout="@layout/fuyong"></include>
+
+
+        </RelativeLayout>
+
+        <include layout="@layout/xian"></include>
+
+        <RelativeLayout
+            android:id="@+id/Relative_Lie_Liu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15sp">
+
+            <ImageView
+                android:id="@+id/Image_Lie_Liu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15sp"
+                android:src="@mipmap/yishanchu" />
+
+            <TextView
+                android:id="@+id/Text_Lie_Liu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="25dp"
+                android:layout_marginStart="25dp"
+                android:layout_toEndOf="@+id/Image_Lie_Liu"
+                android:layout_toRightOf="@+id/Image_Lie_Liu"
+                android:text="已删除" />
+
+            <include layout="@layout/fuyong"></include>
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

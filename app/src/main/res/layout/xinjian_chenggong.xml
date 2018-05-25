@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="2"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50sp" />
+    <ImageView
+        android:layout_weight="1"
+        android:id="@+id/XinJian_chenggong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/chenggong"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/XinJian_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="39dp"
+            android:text="新增客户成功，现共有111位客户"
+            android:textColor="#FF000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/XinJian_tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/XinJian_tv"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="27dp"
+            android:background="@drawable/my_shape"
+            android:padding="10sp"
+            android:text="     继续新增    "
+            android:textColor="#007AFF"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/XinJian_tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/XinJian_tv2"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="99dp"
+            android:text="查看客户"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+</LinearLayout>
